@@ -7,12 +7,13 @@ import BackgroundEffects from "@/components/BackgroundEffects";
 export default function Home() {
   return (
     <main className="bg-linear-to-b from-black via-gray-950 to-black text-white min-h-screen">
+      <BackgroundEffects />
       <Navbar />
       <Hero />
       <About />
       <Skills />
       <Projects />
-      <BackgroundEffects />
+      
     </main>
   );
 }

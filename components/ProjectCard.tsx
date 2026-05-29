@@ -12,7 +12,7 @@ export default function ProjectCard({
   github,
 }: ProjectCardProps) {
   return (
-    <div className="border border-gray-800 rounded-2xl p-8 hover:border-gray-500 transition duration-300 hover:-translate-y-2">
+    <div className="border border-gray-800 rounded-2xl p-8 hover:border-gray-500 transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(255,255,255,0.08)]">
 
       <h3 className="text-2xl font-bold mb-4">
         {title}

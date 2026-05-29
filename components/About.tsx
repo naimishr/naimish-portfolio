@@ -1,9 +1,13 @@
+"use client";
+
 import { motion } from "framer-motion";
 export default function About() {
   return (
-    <section
-      id="about"
-      className="max-w-5xl mx-auto px-6 py-24"
+    <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+         viewport={{ once: true }}
     >
       
       <h2 className="text-4xl font-bold mb-10">
@@ -30,6 +34,6 @@ export default function About() {
 
       </div>
 
-    </section>
+    </motion.section>
   );
 }
